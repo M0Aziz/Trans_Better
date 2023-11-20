@@ -11,7 +11,7 @@
 
 Bienvenue sur le référentiel GitHub du projet de validation du module Applications Web Avancées, réalisé dans le cadre de mon cursus académique. Ce projet, basé sur le framework Laravel, représente une réalisation complète de développement Web Full Stack, englobant l'intégration de tous les modules et fonctionnalités requises.
 
-<b>Caractéristiques du Projet :</b>
+## Caractéristiques du Projet :
 <br>
 🚀 Intégration Réussie : Tous les modules du projet ont été intégrés avec succès sur une seule machine, assurant une expérience utilisateur homogène.<br>
 
