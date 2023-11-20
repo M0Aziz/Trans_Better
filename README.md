@@ -23,7 +23,7 @@ Bienvenue sur le référentiel GitHub du projet de validation du module Applicat
 
 🛠️ Technologies Utilisées : Laravel, PHP, HTML, CSS, JavaScript, Git.<br>
 
-<b>Comment Contribuer :</b>
+## Comment Contribuer :
 <br>
 
 📥 Clonez le dépôt localement.<br>
