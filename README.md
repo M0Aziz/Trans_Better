@@ -28,13 +28,17 @@ Bienvenue sur le référentiel GitHub du projet de validation du module Applicat
 
 📥 Clonez le dépôt localement.<br>
 
-🚀 Explorez le code source pour comprendre l'architecture et les fonctionnalités.
-🐛 Identifiez des problèmes ou proposez des améliorations en ouvrant une issue.
-🛠️ Contribuez en soumettant des pull requests avec des descriptions détaillées des modifications apportées.
+🚀 Explorez le code source pour comprendre l'architecture et les fonctionnalités.<br>
+🐛 Identifiez des problèmes ou proposez des améliorations en ouvrant une issue.<br>
+🛠️ Contribuez en soumettant des pull requests avec des descriptions détaillées des modifications apportées.<br>
 Remarque : N'hésitez pas à consulter les grilles de validation jointes pour comprendre les critères évalués lors de la validation du projet.
-
+<br>
+<br>
 Explorez, contribuez, et merci de faire partie de ce projet ! 🌐✨
 
+<br>
+<br>
+<br>
 
 ## About Laravel
 
