@@ -21,12 +21,15 @@
     <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
     <link rel="icon" type="image/png" href="../assets/img/favicon.png">
     <title>
-        Material Dashboard 2 by Creative Tim
+        TransBetter
     </title>
     <!--     Fonts and icons     -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
     <!-- Nucleo Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  
     @vite(['resources/assets/css/nucleo-icons.css'])
 @vite(['resources/assets/css/nucleo-svg.css'])
 <!-- Font Awesome Icons -->
@@ -41,8 +44,8 @@
 <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3   bg-gradient-dark" id="sidenav-main">
 <div class="sidenav-header">
     <i class="fas fa-times p-3 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
-    <a class="navbar-brand m-0" href=" https://demos.creative-tim.com/material-dashboard/pages/dashboard " target="_blank">
-        <img src="{{ Vite::asset('resources/assets/img/logo-ct.png') }}" class="navbar-brand-img h-300" alt="main_logo">
+    <a class="navbar-brand"  href="" target="_blank">
+        <img src="{{ Vite::asset('resources/assets/img/logo_.png') }}" class="navbar-brand-img h-300" alt="main_logo">
         <span class="ms-1 font-weight-bold text-white">Trans Better</span>
     </a>
 </div>
@@ -60,77 +63,100 @@
         <li class="nav-item">
             <a class="nav-link text-white {{ request()->routeIs('categories.index') ? 'active bg-gradient-primary' : '' }}" href="{{ route('categories.index') }}">
                 <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                    <i class="material-icons opacity-10">table_view</i>
+                    <i class="fas fa-folder"></i>
                 </div>
                 <span class="nav-link-text ms-1">Categorie</span>
             </a>
         </li>
+
         <li class="nav-item">
-            <a class="nav-link text-white " href="../pages/billing.html">
+            <a class="nav-link text-white {{ request()->routeIs('sous_categories.index') ? 'active bg-gradient-primary' : '' }}" href="{{ route('sous_categories.index') }}">
                 <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                    <i class="material-icons opacity-10">receipt_long</i>
+                    <i class="fas fa-sitemap"></i>
                 </div>
-                <span class="nav-link-text ms-1">Billing</span>
+                <span class="nav-link-text ms-1">Sous Categorie</span>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link text-white " href="../pages/virtual-reality.html">
+            <a class="nav-link text-white " href="/moyenTransport">
                 <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                    <i class="material-icons opacity-10">view_in_ar</i>
+                    <i class="fas fa-car"></i>
                 </div>
-                <span class="nav-link-text ms-1">Virtual Reality</span>
+                <span class="nav-link-text ms-1">Moyen de transport</span>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link text-white " href="../pages/rtl.html">
+            <a class="nav-link text-white " href="/imageMoyen">
                 <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                    <i class="material-icons opacity-10">format_textdirection_r_to_l</i>
+                    <i class="fas fa-images"></i>
                 </div>
-                <span class="nav-link-text ms-1">RTL</span>
+                <span class="nav-link-text ms-1"> Images</span>
             </a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link text-white {{ request()->routeIs('tickets.index') ? 'active bg-gradient-primary' : '' }}" href="{{ route('tickets.index') }}">
+                <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                    <i class="fas fa-ticket-alt"></i>
+                </div>
+                <span class="nav-link-text ms-1">Tickets</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white " href="/images">
+                <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                    <i class="fas fa-images"></i>
+                </div>
+                <span class="nav-link-text ms-1"> Image Ticket</span>
+            </a>
+        </li>
+
+
+        <li class="nav-item">
+                <a class="nav-link text-white {{ request()->routeIs('commande.index') ? 'active bg-gradient-primary' : '' }}" href="{{ route('commande.index') }}">
+
+                <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                    <i class="fas fa-shopping-basket"></i>
+                </div>
+                <span class="nav-link-text ms-1">Commande</span>
+            </a>
+        </li>
+
+
         <li class="nav-item">
             <a class="nav-link text-white " href="../pages/notifications.html">
                 <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                    <i class="material-icons opacity-10">notifications</i>
+                    <i class="fas fa-handshake"></i>
                 </div>
-                <span class="nav-link-text ms-1">Notifications</span>
+                <span class="nav-link-text ms-1"> Ligne de commande</span>
             </a>
         </li>
-        <li class="nav-item mt-3">
-            <h6 class="ps-4 ms-2 text-uppercase text-xs text-white font-weight-bolder opacity-8">Account pages</h6>
-        </li>
+
+
+
         <li class="nav-item">
-            <a class="nav-link text-white " href="../pages/profile.html">
+            <a class="nav-link text-white " href="../pages/notifications.html">
                 <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                    <i class="material-icons opacity-10">person</i>
+                    <i class="fas fa-users"></i>
                 </div>
-                <span class="nav-link-text ms-1">Profile</span>
+                <span class="nav-link-text ms-1">User</span>
             </a>
         </li>
+
         <li class="nav-item">
-            <a class="nav-link text-white " href="../pages/sign-in.html">
+            <a class="nav-link text-white {{ request()->routeIs('contacts.index') ? 'active bg-gradient-primary' : '' }}" href="{{ route('contacts.index') }}">
                 <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                    <i class="material-icons opacity-10">login</i>
+                    <i class="fas fa-envelope"></i>
                 </div>
-                <span class="nav-link-text ms-1">Sign In</span>
+                <span class="nav-link-text ms-1">Contact</span>
             </a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link text-white " href="../pages/sign-up.html">
-                <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                    <i class="material-icons opacity-10">assignment</i>
-                </div>
-                <span class="nav-link-text ms-1">Sign Up</span>
-            </a>
-        </li>
+      
+      
+       
+       
     </ul>
 </div>
-<div class="sidenav-footer position-absolute w-100 bottom-0 ">
-    <div class="mx-3">
-        <a class="btn bg-gradient-primary mt-4 w-100" href="https://www.creative-tim.com/product/material-dashboard-pro?ref=sidebarfree" type="button">Upgrade to pro</a>
-    </div>
-</div>
+
 </aside>
 <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
 <!-- Navbar -->
@@ -405,6 +431,9 @@ if (win && document.querySelector('#sidenav-scrollbar')) {
 </script>
 <!-- Github buttons -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script></html>
+
 <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
 @vite(['resources/assets/js/material-dashboard.min.js?v=3.0.4'])
 </body>
